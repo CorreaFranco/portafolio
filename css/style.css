@@ -75,13 +75,14 @@ main {
   height: calc(100vh - 3em);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .home-img {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: -2em;
 }
 .home-img img {
   width: 70%;
@@ -93,13 +94,14 @@ main {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  margin-top: 2em;
 }
 .title {
-  font-size: 3em;
+  font-size: 2em;
 }
 .presentation {
   padding-top: 0.5em;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 
