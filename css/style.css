@@ -22,7 +22,7 @@ body {
 /*INICIO DE HEADER*/
 header {
   width: 100%;
-  height: 3em;
+  height: 4em;
   top: 0;
   right: 0; /*NO USE*/
 }
@@ -30,13 +30,12 @@ header {
   width:100% ;
   height: 100%;
   font-size: 1em;
-  background-color: aqua;
   display: flex;
   justify-content: right;
 }
 .bar-nav {
   width: 100%;
-  height: 3em;
+  height: 4em;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -72,11 +71,9 @@ main {
 }
 .home {
   width: 100%;
-  height: calc(100vh - 3em);
+  height: calc(100vh - 4em);
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
 }
 .home-img {
   width: 100%;
@@ -87,8 +84,7 @@ main {
 }
 .home-img img {
   object-fit: cover;
-  width: 70%;
-  height: 70%;
+  width: 15em;
   border-radius: 50%;
 }
 .home-text {
@@ -130,22 +126,23 @@ main {
   border: solid 0.1em #6b6b6b;
   border-radius: 1em;
 }
+/*---IMG---*/
 .img {
   width: 100%;
-  height: 70%;
+  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/*---FALTA MEJORAR---*/
 .img img {
   object-fit: cover;
   width: 80%;
   border-radius: 5%;
 }
+/*---BTN---*/
 .btn-protects {
   width: 100%;
-  height: 30%;
+  height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,10 +152,10 @@ main {
 }
 .btn-protects a {
   padding: 0.5em;
-  font-size: 2em;
+  font-size: 1.5em;
   display: block;
   text-align: center;
-  border: solid 0.1em #6b6b6b;
+  border: solid 0.05em #6b6b6b;
   border-radius: 0.5em;
   color: #6b6b6b;
 }
@@ -179,7 +176,7 @@ main {
 }
 
 .service {
-  width: 80%;
+  width: 100%;
   height: 40%;
   display: flex;
   flex-direction: column;
@@ -188,7 +185,8 @@ main {
   border: solid 0.1em #6b6b6b;
   border-radius: 1em;
 }
-.code {
+
+.lenguage {
   width: 100%;
   height: 20%;
   font-size: 4em;
@@ -225,32 +223,32 @@ main {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .repair-text h2 {
+  height: 10%;
   font-size: 2em;
   color: #ea9a3f;
 }
-.repair-text p {
+.repair-text ul{
+  height: 60%;
+  list-style: none;
   font-size: 1.5em;
-}
-
-
-/*INICIO DE FOOTER*/
-footer {
-  width: 80%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
-/*---Formulario---*/
+
+/*CONTACTO*/
+.contact {
+  width: 100%;
+  height: calc(100vh + 4em);
+  display: flex;
+  align-items: center;
+}
 .form {
-  margin-top: 20%;
-  margin-bottom: 20%;
-  width: 80%;
-  height: 100vh;
+  width: 100%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -259,20 +257,16 @@ footer {
   border: 1px solid #6b6b6b;
   border-radius: 1em;
 }
-.form-header h2 {
-  font-size: 30px;
+.form h2 {
+  font-size: 2em;
+  color: #ea9a3f;
 }
 .form-header p {
   font-size: 1em;
 }
-
 /*---Campos del Formulario---*/
 .form-row {
   width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
 }
 .form-row input[type="text"] {
   background-color: #bdbdbd;
@@ -280,7 +274,7 @@ footer {
   border-radius: 0.5em;
   width: 100%;
   padding: 0.5em;
-  font-size: 14px;
+  font-size: 0.8em;
 }
 .form-row input[type="email"] {
   background-color: #bdbdbd;
@@ -288,13 +282,13 @@ footer {
   border-radius: 0.5em;
   width: 100%;
   padding: 0.5em;
-  font-size: 14px;
+  font-size: 0.8em;
 }
 .form-row textarea {
   width: 100%;
   padding: 0.5em;
   border-radius: 0.5em;
-  font-size: 14px;
+  font-size: 0.8em;
   background-color: #bdbdbd;
 
   min-height: 10em;
@@ -302,10 +296,10 @@ footer {
 }
 .form-row label {
   margin-bottom: 1em;
-  text-align: initial;
+  text-align: initial;/*???*/
 }
 .form-row button {
-  font-size: 16px;
+  font-size: 0.8em;
   font-weight: bold;
 
   border: solid #6b6b6b 0.1em;
@@ -324,6 +318,16 @@ footer {
   background-color: #6b6b6b;
   border:solid #6b6b6b 0.1em;
   color: #6b6b6b;
+}
+
+
+
+
+/*INICIO DE FOOTER*/
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #ea9a3f;
 }
 
 
