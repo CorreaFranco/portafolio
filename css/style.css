@@ -75,34 +75,38 @@ main {
   height: calc(100vh - 3em);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 .home-img {
   width: 100%;
+  height: 50%;
   display: flex;
   justify-content: center;
-  margin-top: -2em;
+  align-items: center;
 }
 .home-img img {
+  object-fit: cover;
   width: 70%;
+  height: 70%;
   border-radius: 50%;
 }
 .home-text {
   width: 100%;
+  height: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: left;
   text-align: center;
-  justify-content: center;
-  margin-top: 2em;
 }
 .title {
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1em;
+  color: #ea9a3f;
 }
 .presentation {
-  padding-top: 2em;
-  font-size: 1em;
+  padding-top: 1.5em;
+  font-size: 1.5em;
 }
 
 
