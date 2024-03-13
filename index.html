@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d5eec41513.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="bar-nav">
+                <a class="nav-link" href="index.html"><i class="link-home fa-solid fa-house"></i></a>
+                <li class="nav-link"><a class="link-proyects" href="#proyects" >Proyectos</a></li>
+                <li class="nav-link"><a class="link-services" href="#services">Servicios</a></li>
+                <li class="nav-link"><a class="link-form" href="#form">Contacto</a></li>
+                <li class="nav-link"><a href="#">os/day</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home">
+            <div class="home-img">
+                <img src="img/franco correa.png" alt="franco correa">
+            </div>
+            <div class="home-text">
+                <h1 class="title">Desarrollador FullStac</h1>
+                <p class="presentation">Hola, soy un desarrollador junnior FullStack peruano.</p>
+            </div>
+        </section>
+
+        <section class="proyects" id="proyects">
+
+            <div class="proyect slider">
+                <div class="img slider">
+                    <img src="img/slider.jpg" alt="slider">
+                </div>
+                <div class="btn-protects">
+                    <a href="pages/proyects/slider.html">Slider</a>
+                </div>
+            </div>
+            <div class="proyect calculator">
+                <div class="img calculator">
+                    <img src="img/calculator.jpg" alt="calculator">
+                </div>
+                <div class="btn-protects">
+                    <a href="pages/proyects/calculator.html">Slider</a>
+                </div>
+            </div>
+            <div class="proyect slider">
+                <div class="img checklist">
+                    <img src="img/checklist.jpg" alt="checklist">
+                </div>
+                <div class="btn-protects">
+                    <a href="pages/proyects/check list.html">Slider</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="services" id="services">
+
+            <div class="service">
+                <div class="code">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div class="code-text">
+                    <h2>Desarrollador FullStack</h2>
+                    <p>Me gusta codificar cosas desde cero y disfruto dando vida a la imaginacon.</p>
+                    <br>
+                    <h2>Lenguajes</h2>
+                    <p>HTML, CSS, JavaScrip</p>
+                    <br>
+                    <h2>Herramientas</h2>
+                    <p>git <br> gitHub</p>
+                </div>
+            </div>
+            
+            <div class="service">
+                <div class="repair">
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <div class="repair-text">
+                    <p>Service-a</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="form-header">
+        <form action="" method="get" class="form" id="form">
+            <h2>Contacto</h2>
+            <p><em>¡Esperamos tu consulta!</em></p>
+            <div class="form-row">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" />
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="ejemplo@gmail.com" required/>
+            </div>
+            <div class="form-row">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div class="form-row">
+                <button>Enviar</button>
+            </div>
+            <p class="alert" id="alert"></p>
+        </form>
+
+    </footer>
+
+
+
+</body>
+</html>
