@@ -1,10 +1,3 @@
-let menu_responsive = document.querySelector(".fa-bars");
-
-menu_responsive.onclick = function () {
-  navBar = document.querySelector(".bar-nav");
-  navBar.classList.toggle("active");
-};
-
 const form = document.getElementById("form");
 const nombre = document.getElementById("name");
 const parrafo = document.getElementById("alert");
