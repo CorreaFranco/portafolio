@@ -75,7 +75,6 @@ main {
 .home {
   width: 100%;
   height: 100vh;
-  padding-top: 8em;
   display: flex;
   flex-direction: column;
 }
@@ -114,7 +113,6 @@ main {
 .proyects {
   width: 100%;
   height: 300vh;
-  padding-top: 3em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -174,7 +172,6 @@ main {
 .services {
   width: 100%;
   height: 100vh;
-  padding-top: 4em;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
