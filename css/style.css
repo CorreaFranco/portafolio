@@ -180,66 +180,44 @@ main {
 
 .service {
   width: 100%;
-  height: 75%;
+  height: 65%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
   border: solid 0.1em #6b6b6b;
   border-radius: 1em;
 }
-
-.lenguage {
+.lenguage-icon {
   width: 100%;
   height: 20%;
-  font-size: 4em;
+  font-size: 3em;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
-.code-text{
+.lenguage-text {
   width: 80%;
   height: 80%;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: center; */
+  text-align: center;
 }
-.code-text h2 {
-  font-size: 2em;
-  color: #ea9a3f;
-}
-.code-text p {
+.lenguage-text h2 {
   font-size: 1.5em;
-}
-.repair {
-  width: 100%;
-  height: 20%;
-  font-size: 4em;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.repair-text{
-  width: 80%;
-  height: 80%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-.repair-text h2 {
-  height: 10%;
-  font-size: 2em;
   color: #ea9a3f;
 }
-.repair-text ul{
+.lenguage-text ul{
   height: 60%;
   list-style: none;
-  font-size: 1.5em;
+  font-size: 2m;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  line-height: 2em;
 }
+
 
 
 /*CONTACTO*/
@@ -258,7 +236,7 @@ main {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  border: 1px solid #6b6b6b;
+  border: solid 0.1em #6b6b6b;
   border-radius: 1em;
 }
 .form h2 {
@@ -308,9 +286,9 @@ main {
 .form-row button {
   font-size: 0.8em;
   font-weight: bold;
-
-  border: solid #6b6b6b 0.1em;
-  border-radius: 0.2em;
+  
+  border: solid 0.1em #6b6b6b;
+  border-radius: 0.5em;
 
   color: #6b6b6b;
 
