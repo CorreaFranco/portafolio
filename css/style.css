@@ -60,7 +60,9 @@ a {
 .nav-link a:hover {
   color: #6b6b6b;
 }
-
+.nav-link button:hover {
+  color: #6b6b6b;
+}
 /*INICIO DE MAIN*/
 main {
   width: 80%;
@@ -168,7 +170,7 @@ main {
 /*INICIO DE SERVICES*/
 .services {
   width: 100%;
-  height: 200vh;
+  height: calc(100vh + 4em);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -177,7 +179,7 @@ main {
 
 .service {
   width: 100%;
-  height: 40%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -275,6 +277,7 @@ main {
   width: 100%;
   padding: 0.5em;
   font-size: 0.8em;
+  text-align: center;
 }
 .form-row input[type="email"] {
   background-color: #bdbdbd;
@@ -283,6 +286,7 @@ main {
   width: 100%;
   padding: 0.5em;
   font-size: 0.8em;
+  text-align: center;
 }
 .form-row textarea {
   width: 100%;
@@ -290,6 +294,7 @@ main {
   border-radius: 0.5em;
   font-size: 0.8em;
   background-color: #bdbdbd;
+  text-align: center;
 
   min-height: 10em;
   resize: none;
