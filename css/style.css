@@ -322,11 +322,24 @@ main {
 /*INICIO DE FOOTER*/
 footer {
   width: 100%;
-  height: 100px;
+  height: 4em;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #072946;
 }
 
-
+.footer p {
+  text-align: center;
+  font-size: 0.8em;
+  color: #fff;
+}
 
 @media (min-width: 768px) {
   /*INICIO HEADER*/

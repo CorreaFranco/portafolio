@@ -1,30 +1,20 @@
-const form = document.getElementById("form");
-const nombre = document.getElementById("name");
-const parrafo = document.getElementById("alert");
 
-function validarFormulario() {
-  let warnings = "";
-  let valido = true;
-  parrafo.innerHTML = "";
 
-  if (nombre.value.length < 4) {
-    warnings += `El nombre debe contener <br> más de 4 carcateres`;
-    valido = false;
-  }
+//CAMBIAR DE IDIOMA
 
-  if (!valido) {
-    parrafo.innerHTML = warnings;
-  } else {
-    parrafo.innerHTML = "Enviado";
-  }
-  return valido;
+// Estado inicial del idioma
+let idiomaActual = 'es'; // español por defecto
+
+// Función para cambiar el idioma
+function cambiarIdioma() {
+    if (idiomaActual === 'es') {
+        document.getElementById('title').innerText = 'Welcome!';
+        document.getElementById('presentation').innerText = 'I am Franco Correa, student of Systems Development and FullStack Development. I am aware of new technologies and the potential of teamwork.I hope you enjoy my website!';
+        idiomaActual = 'en'; // Cambiamos el idioma a inglés
+    } else {
+        window.location.href = 'index.html';
+    }
 }
 
-form.addEventListener("submit", (e) => {
-  if (validarFormulario()) {
-    // Si la validación es exitosa, puedes enviar el formulario
-    formulario.submit();
-  } else {
-    e.preventDefault(); // Evita que el formulario se envíe automáticamente
-  }
-});
+// Event listener para el botón
+document.getElementById('language').addEventListener('click', cambiarIdioma);
