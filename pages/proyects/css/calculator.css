@@ -38,7 +38,8 @@
     width: 70%;
     height: 40%;
     color: rgba(155, 5, 5, 0.616);
-    font-size: 1em;
+    font-size: large;
+    text-align: center;
     border-radius: 0.5em;
     background-color: rgb(50, 205, 171);
 }
@@ -63,6 +64,7 @@
     width: 15%;
     height: 80%;
     border-radius: 15%;
+    font-size: large;
 }
 .ac {
     background-color: rgba(155, 5, 5, 0.616);
@@ -73,4 +75,5 @@
     width: 15%;
     height: 80%;
     border-radius: 15%;
+    font-size: large;
 }
