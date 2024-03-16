@@ -115,6 +115,40 @@ main {
 }
 
 
+
+/*CARRUCEL*/
+.carousel {
+  /* position: relative; */
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.track {
+  display: flex;
+  width: calc(100% * 1.5); /* Ajusta el ancho para mostrar tres imágenes a la vez */
+}
+
+.slick {
+  flex: 0 0 33.33%; /* Cada imagen ocupa 1/3 del ancho del contenedor */
+}
+
+img {
+  /* width: 15em; */
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*INICIO DE PROYECTOS*/
 .proyects {
   width: 100%;
