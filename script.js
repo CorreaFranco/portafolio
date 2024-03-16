@@ -58,7 +58,6 @@ document.getElementById('language').addEventListener('click', cambiarIdioma);
 
 
 //PROYECTS
-
 let track = document.getElementById('track');
 let slickWidth = document.querySelector('.slick').offsetWidth;
 let listWidth = track.parentNode.offsetWidth;
@@ -67,24 +66,30 @@ let isDragging = false;
 let startX;
 let scrollLeft;
 
-track.addEventListener('mousedown', (e) => {
+track.addEventListener('mousedown', startDragging);
+track.addEventListener('touchstart', startDragging);
+
+track.addEventListener('mouseleave', stopDragging);
+track.addEventListener('mouseup', stopDragging);
+track.addEventListener('touchend', stopDragging);
+
+track.addEventListener('mousemove', moveTracking);
+track.addEventListener('touchmove', moveTracking);
+
+function startDragging(e) {
     isDragging = true;
-    startX = e.pageX - track.offsetLeft;
+    startX = (e.type === 'mousedown') ? e.pageX - track.offsetLeft : e.touches[0].clientX - track.offsetLeft;
     scrollLeft = track.parentNode.scrollLeft;
-});
+}
 
-track.addEventListener('mouseleave', () => {
+function stopDragging() {
     isDragging = false;
-});
+}
 
-track.addEventListener('mouseup', () => {
-    isDragging = false;
-});
-
-track.addEventListener('mousemove', (e) => {
+function moveTracking(e) {
     if (!isDragging) return;
     e.preventDefault();
-    const x = e.pageX - track.offsetLeft;
+    const x = (e.type === 'mousemove') ? e.pageX - track.offsetLeft : e.touches[0].clientX - track.offsetLeft;
     const walk = (x - startX) * 3; // Ajuste de sensibilidad de desplazamiento
     track.parentNode.scrollLeft = scrollLeft - walk;
-});
+}
