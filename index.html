@@ -37,36 +37,41 @@
             </div>
         </section>
 
-        <section class="projects carousel" id="projects">
-            
-            <div class="title-projects">
+        <section class="projects" id="projects">
+
+            <div class="proyects-title">
+                <button class="button-prev" onclick="prevAction()"><i class="fa-solid fa-chevron-left"></i></button>
                 <h2>PROYECTOS</h2>
+                <button class="button-next" onclick="nextAction()"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
 
-            <div class="track" id="track">
-                <div class="slick">
-                    <div class="img calculator">
-                        <img src="img/calculator.jpg" alt="calculator">
+            <div class="carousel">
+                <div class="track" id="track">
+                    <div class="slick">
+                        <div class="img calculator">
+                            <img src="img/calculator.jpg" alt="calculator">
+                        </div>
+                        <div class="btn-protects">
+                            <a href="pages/projects/calculator.html">Calculadora</a>
+                        </div>   
                     </div>
-                    <div class="btn-protects">
-                        <a href="pages/projects/calculator.html">Calculadora</a>
-                    </div>       
-                </div>
-                <div class="slick">
-                    <div class="img slider">
-                        <img src="img/slider.jpg" alt="slider">
+                    <div class="slick">
+                        <div class="img slider">
+                            <img src="img/slider.jpg" alt="slider">
+                        </div>
+                        <div class="btn-protects">
+                            <a href="pages/proyects/slider.html">Slider</a>
+                        </div>
                     </div>
-                    <div class="btn-protects">
-                        <a href="pages/proyects/slider.html">Slider</a>
+                    <div class="slick">
+                        <div class="img checklist">
+                            <img src="img/checklist.jpg" alt="checklist">
+                        </div>
+                        <div class="btn-protects">
+                            <a href="pages/proyects/check list.html">Checklist</a>
+                        </div>
                     </div>
-                </div>
-                <div class="slick">
-                    <div class="img checklist">
-                        <img src="img/checklist.jpg" alt="checklist">
-                    </div>
-                    <div class="btn-protects">
-                        <a href="pages/proyects/check list.html">Checklist</a>
-                    </div>
+                    <!-- Agregar más elementos .slick si es necesario -->
                 </div>
             </div>
 

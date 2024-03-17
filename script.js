@@ -60,36 +60,22 @@ document.getElementById('language').addEventListener('click', cambiarIdioma);
 //PROYECTS
 let track = document.getElementById('track');
 let slickWidth = document.querySelector('.slick').offsetWidth;
-let listWidth = track.parentNode.offsetWidth;
-let leftPosition = 0;
-let isDragging = false;
-let startX;
-let scrollLeft;
+let listWidth = track.offsetWidth;
+let currentIndex = 0; // Variable para rastrear el índice de la diapositiva actual
 
-track.addEventListener('mousedown', startDragging);
-track.addEventListener('touchstart', startDragging);
-
-track.addEventListener('mouseleave', stopDragging);
-track.addEventListener('mouseup', stopDragging);
-track.addEventListener('touchend', stopDragging);
-
-track.addEventListener('mousemove', moveTracking);
-track.addEventListener('touchmove', moveTracking);
-
-function startDragging(e) {
-    isDragging = true;
-    startX = (e.type === 'mousedown') ? e.pageX - track.offsetLeft : e.touches[0].clientX - track.offsetLeft;
-    scrollLeft = track.parentNode.scrollLeft;
+function prevAction() {
+    if (currentIndex > 0) { // Verifica si hay diapositivas anteriores
+        currentIndex--;
+        const newPosition = -slickWidth * currentIndex;
+        track.style.transform = `translateX(${newPosition}px)`;
+    }
 }
 
-function stopDragging() {
-    isDragging = false;
-}
-
-function moveTracking(e) {
-    if (!isDragging) return;
-    e.preventDefault();
-    const x = (e.type === 'mousemove') ? e.pageX - track.offsetLeft : e.touches[0].clientX - track.offsetLeft;
-    const walk = (x - startX) * 3; // Ajuste de sensibilidad de desplazamiento
-    track.parentNode.scrollLeft = scrollLeft - walk;
+function nextAction() {
+    const maxIndex = track.children.length - 1; // Índice máximo de las diapositivas
+    if (currentIndex < maxIndex) { // Verifica si hay diapositivas siguientes
+        currentIndex++;
+        const newPosition = -slickWidth * currentIndex;
+        track.style.transform = `translateX(${newPosition}px)`;
+    }
 }
