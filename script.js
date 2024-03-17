@@ -61,21 +61,16 @@ document.getElementById('language').addEventListener('click', cambiarIdioma);
 let track = document.getElementById('track');
 let slickWidth = document.querySelector('.slick').offsetWidth;
 let listWidth = track.offsetWidth;
-let currentIndex = 0; // Variable para rastrear el índice de la diapositiva actual
+let currentIndex = 0;
 
 function prevAction() {
-    if (currentIndex > 0) { // Verifica si hay diapositivas anteriores
-        currentIndex--;
-        const newPosition = -slickWidth * currentIndex;
-        track.style.transform = `translateX(${newPosition}px)`;
-    }
+    currentIndex = (currentIndex === 0) ? track.children.length - 1 : currentIndex - 1;
+    const newPosition = -slickWidth * currentIndex;
+    track.style.transform = `translateX(${newPosition}px)`;
 }
 
 function nextAction() {
-    const maxIndex = track.children.length - 1; // Índice máximo de las diapositivas
-    if (currentIndex < maxIndex) { // Verifica si hay diapositivas siguientes
-        currentIndex++;
-        const newPosition = -slickWidth * currentIndex;
-        track.style.transform = `translateX(${newPosition}px)`;
-    }
+    currentIndex = (currentIndex === track.children.length - 1) ? 0 : currentIndex + 1;
+    const newPosition = -slickWidth * currentIndex;
+    track.style.transform = `translateX(${newPosition}px)`;
 }
