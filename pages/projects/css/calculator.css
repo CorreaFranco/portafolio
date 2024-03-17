@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing:  border-box;
-  }
-  body {
+}
+body {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -12,10 +12,26 @@
     align-items: center;
     text-align: center;
     background-color: beige;
-  }
-  
-  /*AQUI LA CALCULADORA*/
-  #calculator {
+}
+
+/*TITULO*/
+.title {
+    width: 70%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.button-prev-page {
+    width: 20%;
+    height: 100%;
+    font-size: 2.5em;
+    color: #072946;
+}
+
+
+/*AQUI LA CALCULADORA*/
+#calculator {
     width: 70%;
     height: 50%;
     background-color: #072946;

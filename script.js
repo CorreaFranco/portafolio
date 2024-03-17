@@ -58,10 +58,42 @@ document.getElementById('language').addEventListener('click', cambiarIdioma);
 
 
 //PROYECTS
+
+
 let track = document.getElementById('track');
 let slickWidth = document.querySelector('.slick').offsetWidth;
-let listWidth = track.offsetWidth;
 let currentIndex = 0;
+
+// Variables para el seguimiento del movimiento táctil
+let touchStartX = 0;
+let touchEndX = 0;
+
+// Añadir listeners de eventos táctiles
+track.addEventListener('touchstart', touchStart);
+track.addEventListener('touchmove', touchMove);
+track.addEventListener('touchend', touchEnd);
+
+function touchStart(event) {
+    touchStartX = event.touches[0].clientX;
+}
+
+function touchMove(event) {
+    touchEndX = event.touches[0].clientX;
+}
+
+function touchEnd() {
+    // Calcular la diferencia de posición táctil
+    let touchDiff = touchStartX - touchEndX;
+
+    // Determinar si se debe avanzar o retroceder en el carrusel
+    if (touchDiff > 50) {
+        nextAction();
+    } else if (touchDiff < -50) {
+        prevAction();
+    }
+}
+
+// Las funciones prevAction() y nextAction() se modifican para que no se llamen directamente desde los botones.
 
 function prevAction() {
     currentIndex = (currentIndex === 0) ? track.children.length - 1 : currentIndex - 1;
