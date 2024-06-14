@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primera Web</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <script src="https://kit.fontawesome.com/d5eec41513.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,125 +16,41 @@
 <body>
     <header>
         <nav class="nav" id="nav">
-            <ul class="bar-nav">
-                <a class="nav-link" href="#nav"><i class="link-home fa-solid fa-house"></i></a>
-                <li class="nav-link"><a class="link-proyects" id="en-proyects" href="#projects" >Proyectos</a></li>
-                <li class="nav-link"><a class="link-services" id="en-services" href="#services">Servicios</a></li>
-                <li class="nav-link"><a class="link-form" id="en-contact" href="#contact">Contacto</a></li>
-                <li class="nav-link"><button id="language">EN</button></li>
+            <ul class="bar__nav">
+                <li class="nav__link"><a href="#nav"><i class="link-home fa-solid fa-house"></i></a></li>
+                <li class="nav__link"><a class="link-proyects" id="en-proyects" href="#projects" >Sobre me</a></li>
+                <li class="nav__link"><a class="link-services" id="en-services" href="#services">Proyectos</a></li>
+                <li class="nav__link"><a class="link-form" id="en-contact" href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="home" id="home">
-            <div class="home-img">
-                <img src="img/franco correa.png" alt="franco correa">
-            </div>
-            <div class="home-text">
-                <h1 class="title" id="title">Hola 👋</h1>
-                <p class="presentation" id="presentation"><em>Soy Franco Correa, estudiante de Desarrollo de sistemas y Desarrollo FullStack.<br>Soy consiente del potencial de las nuevas tecnologias y el trabajo en equipo.<br>¡Espero disfrutes de mi web!</em></p>
-            </div>
-        </section>
+    <main id="main">
+        <div class="main__container">
+            <section class="main__contacto--wsp">
+                <marquee behavior="" direction=""><p>Contactame por whatsapp</p></marquee>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </section>
 
-        <section class="projects" id="projects">
-
-            <div class="proyects-title">
-                <button class="button-prev" onclick="prevAction()"><i class="fa-solid fa-chevron-left"></i></button>
-                <h2>PROYECTOS</h2>
-                <button class="button-next" onclick="nextAction()"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-
-            <div class="carousel">
-                <div class="track" id="track">
-                    <div class="slick">
-                        <div class="img calculator">
-                            <img src="img/calculator.jpg" alt="calculator">
-                        </div>
-                        <div class="btn-protects">
-                            <a href="pages/projects/calculator.html">Calculadora</a>
-                        </div>   
-                    </div>
-                    <div class="slick">
-                        <div class="img slider">
-                            <img src="img/slider.jpg" alt="slider">
-                        </div>
-                        <div class="btn-protects">
-                            <a href="pages/proyects/slider.html">Slider</a>
-                        </div>
-                    </div>
-                    <div class="slick">
-                        <div class="img checklist">
-                            <img src="img/checklist.jpg" alt="checklist">
-                        </div>
-                        <div class="btn-protects">
-                            <a href="pages/projects/checklist.html">Checklist</a>
-                        </div>
-                    </div>
-                    <!-- Agregar más elementos .slick si es necesario -->
-                </div>
-            </div>
-
-        </section>
-
-        <section class="services" id="services">
-
-            <div class="service">
-                <div class="lenguage-icon">
-                    <i class="fa-solid fa-laptop-code"></i>
-                </div>
-                <div class="lenguage-text">
-                    <h2>Lenguajes:</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScrip</li>
-                        
-                    </ul>
-                    <h2>Herramientas:</h2>
-                    <ul>
-                        <li>Git</li>
-                        <li>Github</li>
-                    </ul>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="contact" id="contact">
-            <form action="" method="get" class="form" id="form">
-                <div class="form-text">
-                    <h2>Contacto</h2>
-                    <p><em>¡Esperamos tu consulta!</em></p>
-                </div>
-                <div class="form-row">
-                    <label for="name">Nombre</label>
-                    <input id="name" name="name" type="text" />
-                </div>
-                <div class="form-row">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="ejemplo@gmail.com" required/>
-                </div>
-                <div class="form-row">
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message"></textarea>
-                </div>
-                <div class="form-row">
-                    <button>Enviar</button>
-                </div>
-                <p class="alert" id="alert"></p>
-            </form>
-            
-        </section>
+            <section class="main__gitub">
+                <p>Puedes revisar algunos de mis proyectos en github</p>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+            </section>
+        </div>
     </main>
+    <section class="construccion">
+        <div class="construccion__container">
+            <p>Pagina en reconstrucción</p>
+            <video width="640" height="360" controls>
+                <source src="./media/construccion.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
 
-    <footer>
-        <div class="footer">
+    <footer id="footer">
+        <div class="footer__container">
             <p>&copy; 2024 Correa Franco - Todos los derechos reservados</p>
         </div>
     </footer>
-
-
-
 </body>
 </html>
