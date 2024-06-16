@@ -237,8 +237,8 @@ main {
 .main__contacto--wsp {
     position: fixed;
 
-    top: 75%;
-    right: 35%;
+    top: 90%;
+    right: 5%;
 }
 .fa-whatsapp {
   font-size: 50px;
