@@ -48,20 +48,24 @@ body {
   background-color: #091A28;
 }
 
+
 /*
   color: #6b6b6b;
-
   background-color: #091A28;
   background-color: #072946;
 */
 
-/* HEADER INICIO*/
+
+/*  HEADER  */
 header {
   width: 100%;
   height: 4em;
+
+  padding: 10px 0;
 }
 .nav {
-
+  max-width: 400px;
+  margin: auto;
 }
 .bar__nav {
   width: 100%;
@@ -71,21 +75,28 @@ header {
 
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+
+  border: 1px solid #ee0;
 }
 .nav__link i,
 a {
   color: inherit;
   text-decoration: none;
 }
-/*  HEADER  FIN  */
+/* .nav__link:hover {
+
+} */
+/*  HEADER  END  */
 
 
-/*INICIO DE MAIN*/
+/*  MAIN  */
 main {
   width: 90%;
   margin: auto;
+
+  margin-top: 10px;
 }
 .main__container {
   max-width: 400px;
@@ -95,15 +106,13 @@ main {
 /*  ABOUT ME  */
 .about__me {
   border-radius: 5px;
-  border: 1px solid #ee0;
+  /* border: 1px solid #ee0; */
 }
-/*
-foto
-*/
+/*  foto  */
 .about__me--img--container {
   width: 50%;
   margin: auto;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .about__me--img {
   border-radius: 50%;
@@ -126,13 +135,10 @@ foto
 .about__me--presentation--content--dinamic {
   padding-right: 10px;
 }
-/* .about__me--instruction--content {
-
-} */
 .about__me--instruction {
   padding: 10px;
 }
-/*social*/
+/*  social  */
 .about__me--social {
   padding: 10px 0;
 }
@@ -179,7 +185,7 @@ foto
 /*  ABOUT ME END  */
 
 
-/*  PROYECTOS  */
+/*  PROYECTS  */
 .proyectos {
   width: 100%;
 
@@ -228,26 +234,16 @@ foto
 
   text-align: center;
 }
-
-
-
-
-
 .main__contacto--wsp {
     position: fixed;
 
-    bottom: 10%;
+    top: 75%;
     right: 35%;
 }
 .fa-whatsapp {
   font-size: 50px;
   color: #0f0;
 }
-
-
-/*INICIO DE MAIN*/
-
-
 /*  arrow to whatsapp  */
 .arrow__whatsapp {
   padding: 20px 0;
@@ -267,11 +263,11 @@ foto
   font-size: 50px;
   padding: 0 10px;
 }
-/*  MAIN FIN  */
+/*  MAIN END  */
 
 
 
-/*  FOOTER INICIO  */
+/*  FOOTER  */
 #footer {
   width: 100%;
   height: 4em;
@@ -289,9 +285,10 @@ foto
 .footer p {
   font-size: 1em;
 }
-/*  FOOTER FIN  */
+/*  FOOTER END  */
 
-/*  CONSTRUCCTION  */
+
+/*  CONSTRUCTION  */
 .construccion__container {
   max-width: 100%;
   margin: auto;
