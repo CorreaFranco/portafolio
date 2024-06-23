@@ -140,7 +140,7 @@ const CreateMain = () => {
             </section>
 
             <section class="main__contacto--wsp">
-                <a href="https://wa.me/51934928064?text=Hola" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://wa.me/51902344231?text=HolaVengoDeTuPagina" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </section>
         </div>
     `
